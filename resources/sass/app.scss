@@ -30,3 +30,19 @@
     color: #ccc;
     content: "/\00a0";
 }
+
+.footer-row{
+    background-color: #212529;
+    position:relative ;
+    bottom:0;
+    width:100%;
+}
+
+footer{
+    color: #ccc;
+}
+
+.row .col-md-8{
+    max-width: 50%;
+    margin: auto;
+}
