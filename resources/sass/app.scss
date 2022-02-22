@@ -7,6 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+.list-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+}
+
 .gsc-input {
     width: 300px;
 }
@@ -34,8 +40,9 @@
 .footer-row{
     background-color: #212529;
     position: fixed;
-    bottom:0;
-    width:100%;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
 }
 
 footer{
@@ -104,3 +111,8 @@ footer p{
     justify-content: flex-end;
     margin-top: 1rem;
 }
+
+.height{
+    margin-top: 6rem;
+}
+

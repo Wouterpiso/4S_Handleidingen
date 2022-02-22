@@ -15,7 +15,6 @@
 
 <p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name, 'type'=>$type->name]) }}</p>
 
-
 	@foreach ($manuals as $manual)
 	
 		@if ($manual->locally_available)

@@ -14,15 +14,18 @@
 
 <h1>{{ $brand->name }} - {{ $type->name }}</h1>
 
-@if ($manual->locally_available)
-	<iframe src="{{ $manual->url }}" width="780" height="600" frameborder="0" marginheight="0" marginwidth="0">
-	Iframes are not supported<br />
-	<a href="{{ $manual->url }}" target="new" alt="Download your manual here" title="Download your manual here">Click here to download the manual</a>
-	</iframe>
-@else
-	<a href="{{ $manual->url }}" target="new" alt="Download your manual here" title="Download your manual here">Click here to download the manual</a>
-@endif
-
+<div class="head-link">
+	@if ($manual->locally_available)
+		<iframe src="{{ $manual->url }}" width="780" height="600" frameborder="0" marginheight="0" marginwidth="0">
+		Iframes are not supported<br />
+		<a href="{{ $manual->url }}">
+			<button type="button">Click here to download the manual</button>
+		</a>
+		</iframe>
+	@else
+		<a href="{{ $manual->url }}">Click here to download the manual</a>
+	@endif
+<div
 
 
 

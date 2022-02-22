@@ -9,6 +9,28 @@
 @section('content')
 
     <h1>
+    {{ __('misc.popular_manuals') }}
+    </h1>
+
+    <div class="container popular-manuals manual-container">
+    <div class="row">
+    <div class="col">
+    <ol></ol>
+    <ol>
+    @foreach($popularTypes as $type)
+
+    <li>
+    <a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/">{{ $type->brand->name }}</a>:
+    <a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name }}" class="type-link">{{ $type->name }}</a>
+    </li>
+
+    @endforeach
+    </ol>
+    </div>
+    </div>
+    </div>
+
+    <h1>
         @section('title')
             {{ __('misc.all_brands') }}
         @show

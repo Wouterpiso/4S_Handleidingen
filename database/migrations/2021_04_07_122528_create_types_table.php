@@ -17,6 +17,7 @@ class CreateTypesTable extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('brand_id');
+            $table->integer('viewcount')->default(0);
             $table->timestamps();
 
             $table->foreign('brand_id')->references('id')->on('brands');

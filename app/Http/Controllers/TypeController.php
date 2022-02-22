@@ -13,6 +13,9 @@ class TypeController extends Controller
         $brand = Brand::findOrFail($brand_id);
         $type = Type::findOrFail($type_id);
         $manuals = $type->Manuals()->get();
+        
+        $type->vieuwcount++;
+        $type->save();
 
         return view('pages/manual_list', [
             "manuals"=>$manuals,
