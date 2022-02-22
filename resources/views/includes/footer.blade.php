@@ -1,6 +1,25 @@
 
 <footer>
-	© {{ __('misc.copyright') }}
+  <div class="foot-content">
+    <div class="over-ons">
+    <a href="/" title="{{ __('misc.home_alt') }}">about us</a>
+    </div>
+    <div class="contact-gegevens">
+      <p>dummy 1</p>
+      <p>dummy 2</p>
+      <p>dummy 3</p>
+      <p>dummy 4</p>
+    </div>
+    <div class="social-media">
+      <a href="/">link 1</a>
+      <a href="/">link 2</a>
+      <a href="/">link 3</a>
+      <a href="/">link 4</a>
+    </div>
+  </div>
+  <div class="copyright">
+	  © {{ __('misc.copyright') }}
+  </div>
 </footer>
 
 
