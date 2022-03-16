@@ -13,21 +13,20 @@
     </h1>
 
     <div class="container popular-manuals manual-container">
-    <div class="row">
-    <div class="col">
-    <ol></ol>
-    <ol>
-    @foreach($popularTypes as $type)
+        <div class="row">
+            <div class="col">
+                <ol>
+                    @foreach($popularTypes as $type)
 
-    <li>
-    <a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/">{{ $type->brand->name }}</a>:
-    <a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name }}" class="type-link">{{ $type->name }}</a>
-    </li>
+                    <li>
+                        <a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/">{{ $type->brand->name }}</a>:
+                        <a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name }}" class="type-link">{{ $type->name }}</a>
+                    </li>
 
-    @endforeach
-    </ol>
-    </div>
-    </div>
+                    @endforeach
+                </ol>
+            </div>
+        </div>
     </div>
 
     <h1>
